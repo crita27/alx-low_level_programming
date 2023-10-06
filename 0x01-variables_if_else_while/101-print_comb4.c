@@ -19,7 +19,7 @@ if ((j != i) != k)
 putchar(i);
 putchar(j);
 putchar(k);
-if (i == '7' && i == '8')
+if (i == '7' && j == '8')
 continue;
 putchar(',');
 putchar(' ');
