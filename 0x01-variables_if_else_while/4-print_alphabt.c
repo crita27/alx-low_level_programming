@@ -7,12 +7,9 @@
 int main(void)
 {
 char m;
-for (m = 'a' ; m < 'e' ; m++)
-putchar(m);
-for (m = 'f' ; m < 'q' ; m++)
-putchar(m);
-for (m = 'r' ; m <= 'z' ; m++) 
-putchar(m);
+for (m = 'a' ; m < 'z' ; m++)
+	if (m != 'q' && m != 'e')
+		putchar(m);
 putchar('\n');
 return (0);
 }
