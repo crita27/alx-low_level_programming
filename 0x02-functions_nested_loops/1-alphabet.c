@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * main -lower case
+ * print_alphabet -lower case
  *
  * Return: return 0
  */
-int main(void)
+void print_alphabet(void)
 {
 char i;
 for (i = 'a' ; i <= 'z' ; i++)
