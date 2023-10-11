@@ -8,10 +8,10 @@ int _abs(int r)
 {
 if(r < 0)
 {
-int abs_val;
-
-abs_val = r * -1;
-return (abs_val);
+int n;
+n = r * -1;
+return (n);
 }
-return (0);
+else
+return (r);
 }
