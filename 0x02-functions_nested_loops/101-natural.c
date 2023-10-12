@@ -3,7 +3,7 @@
  * main - print sum
  * Return: 0
  */
-inr main(void)
+int main(void)
 {
 	int i, z = 0;
 	while (i < 1024)
