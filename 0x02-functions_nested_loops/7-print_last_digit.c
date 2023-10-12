@@ -1,30 +1,17 @@
-#include "main.h" 
-/**  
- * jack_bauer - prints enery minute of the day  
- * Return: ...  
+#include "main.h"
+/**
+ * print_last_digit - prints the last digit
+ * @n: the number to be checked
+ * Return: value of last digit
  */
-void jack_bauer(void)
-{       
-int a, b, c, d;
-for (a = 0; a <= 2; a++)
-{	
-for (b = 0; b <= 9; b++)
+int print_last_digit(int n)
 {
-if ((a <= 1 && b<= 9) || (a <= 2 && b <= 3))
+int r;
+r = n % 10;
+if (r < 0)
 {
-for (c = 0; c <=5; c++)
-{
-for (d = 0; d <= 9; d++)
-{
-_putchar(a + '0');
-_putchar(b + '0');
-_putchar(58);
-_putchar(c + '0');
-_putchar(d + '0');
-_putchar('\n');
+r = r * -1;
 }
-}
-}
-}
-}
+_putchar(r + '0');
+return (r);
 }
