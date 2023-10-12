@@ -6,7 +6,7 @@
  * @i: number to be add
  * @j: other number to be add
  */
-int add (int i, int j)
+int add(int i, int j)
 {
 	return (i + j);
 }
