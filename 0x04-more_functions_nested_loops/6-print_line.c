@@ -2,7 +2,7 @@
 
 /**
  * print_line = draws straightline
- * @n: number of times 
+ * @n: number of times
  */
 
 void print_line(int n)
