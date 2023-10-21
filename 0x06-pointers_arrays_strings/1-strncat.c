@@ -13,12 +13,13 @@ while (*ptr != '\0')
 {
 ptr++;
 }
-while (*src != '\0' && n > 0) {
+while (*src != '\0' && n > 0)
+{
 *ptr = *src;
 ptr++;
 src++;
 n--;
 }
-*ptr = '\0'; 
+*ptr = '\0';
 return (dest);
 }
