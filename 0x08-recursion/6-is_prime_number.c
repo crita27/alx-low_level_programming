@@ -1,24 +1,29 @@
 #include "main.h"
 #include <stdio.h>
 
-/**
- * is_prime_number - prime numbeer
+int prime_recursion(int n, int i);
+/** 
+ * is_prime_number - if number is prime
  * @n: input
  * Return: 0
  */
 int is_prime_number(int n)
 {
-int i;
-if (n <= 1)
-{
-return (0);
+	return (prime_recursion(n, 1));
 }
-for (i = 2; i * i <= n; i++)
+/**
+ * prime_recursion - check if it is prime
+ * @n: input
+ * @i: times
+ * Return: 0 for compostie or 1 for prime
+ */
+int prime_recursion(int n, int i)
 {
-if (n % i == 0)
-{
-return (0);
-}
-}
-return (1);
+	if (n <= 1)
+		return (0);
+	if (n % i == 0 && i > 1)
+		return (0);
+	if ((n / i) < i)
+		return (1);
+	return (prime_recursion(n, i + 1));
 }
