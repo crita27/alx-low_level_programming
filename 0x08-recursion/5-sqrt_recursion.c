@@ -1,28 +1,29 @@
 #include "main.h"
 #include <stdio.h>
 
-int prime_recursion(int n, int i);
-/** is_prime_number - if number is prime
- * @n: input
- * Return: 0
+int _sqrt(int n, int i);
+/**
+ * _sqrt_recursion - square root
+ * @n: number
+ * Return: natural square root
  */
-int is_prime_number(int n)
+int _sqrt_recursion(int n)
 {
-	return (prime_recursion);
+	return (_sqrt(n, 1));
 }
 /**
- * prime_recursion - check if it is prime
- * @n: input
- * @i: times
- * Return: 0 for compostie or 1 for prime
+ * _sqrt - calculate natural sqrt
+ * @n: number
+ * @i: number
+ * Return: natural sqrt
  */
-int prime_recursion(int n, int i)
+int _sqrt(int n, int i)
 {
-	if (n <= 1)
-		return (0);
-	if (n % i == 0 && i > 1)
-		return (0);
-	if ((n / i) < i)
-		return (1);
-	return (prime recursion(n, i + 1));
+	int sqrt = i * i;
+	
+	if (sqrt > n)
+		return (-1);
+	if (sqrt == n)
+		return (i);
+	return (_sqrt(n, i + 1));
 }
