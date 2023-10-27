@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int prime_recursion(int n, int i);
-/** 
+/**
  * is_prime_number - if number is prime
  * @n: input
  * Return: 0
