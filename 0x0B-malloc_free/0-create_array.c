@@ -4,7 +4,7 @@
 
 /**
  * create_array- creates an array of charts
- * @size: the size of the aray 
+ * @size: the size of the aray
  * @c: the char to fill in the array
  *
  * Return: the array filled
@@ -20,7 +20,7 @@ char *create_array(unsigned int size, char c)
 
 	if (s == NULL)
 		return (NULL);
-	for (i = 0; i < size; i ++)
+	for (i = 0; i < size; i++)
 	{
 		s[i] = c;
 	}
