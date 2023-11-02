@@ -31,7 +31,7 @@ int** alloc_grid(int width, int height)
 				  free(grid[j]);
 			  }
 			  free(grid);
-			  return (0);
+			  return (NULL);
 		 }
 	}
 	return (0);
