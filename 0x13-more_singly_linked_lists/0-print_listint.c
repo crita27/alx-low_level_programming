@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "lists.h"
+#include <stdlib.h>
 
 /**
  * size_t print_listint - print all elements
