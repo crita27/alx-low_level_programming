@@ -4,7 +4,7 @@
 /**
  * sum_listint - calculate sum
  * @head: first node
- * RETURN: sum
+ * Return: sum
  */
 int sum_listint(listint_t *head)
 {
